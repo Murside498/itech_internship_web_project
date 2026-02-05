@@ -1,0 +1,17 @@
+{
+  "name": "stajproje",
+  "version": "1.0.0",
+  "description": "Node.js backend for anasayfa.html and  giris.html  and kayit.html and giris_kayit.css and tumsite.css",
+  "main": "sunucu.js",
+  "scripts": {
+    "start": "node sunucu.js"
+  },
+  "dependencies": { 
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "pg": "^8.16.3",
+    "sqlite3": "^5.1.7"
+  }
+}

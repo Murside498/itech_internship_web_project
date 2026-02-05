@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa - Sorgulamalar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="tumsite.css">
+    <style>
+      .header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+      .header-bar .hosgeldin { font-size: 1.2em; font-weight: bold; }
+      .header-bar .cikis-link { font-size: 1em; }
+    </style>
+</head>
+<body> 
+    <div class="header-bar">
+      <span class="hosgeldin">Hoş geldiniz!</span>
+      <a href="/cikis" style="color: #1e7099; text-decoration: none;">Çıkış Yap</a>
+    </div>
+    <h1 style="text-align: center;">Sorgulamalar</h1>
+    <form class="form-grid" action="/sorgula" method="POST"> 
+        <div class="form-group">
+            <label for="gumrukMudur">Gümrük Müdürlüğü</label>
+            <i class="fa fa-building"></i>
+            <select name="gumrukMudur" id="gumrukMudur">
+                <option value="">Seçiniz</option>
+                <option value=1>Gümrük Müdürlüğü1</option>
+                <option value=2>Gümrük Müdürlüğü2</option>
+                <option value=3>Gümrük Müdürlüğü3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="bildirimNo">Bildirim Numarası</label>
+            <i class="fa fa-file"></i>
+            <input type="number" name="bildirimNo" id="bildirimNo" >
+        </div>
+        <div class="form-group">
+            <label for="bildirimTarihi">Bildirim Tarihi</label>
+            <i class="fa fa-calendar"></i>
+            <input type="date" id="bildirimTarihi" name="bildirimTarihi" value="2025-07-11">
+        </div>
+        <div class="form-group">
+            <label for="aracBilgi">Araç Plakası-Konteyner-İMO Numarası</label>
+            <i class="fa fa-truck"></i>
+            <input type="text" id="aracBilgi" name="aracBilgi">
+        </div>
+        <div class="form-group">
+            <label for="belgeNo">Belge Numarası</label>
+            <i class="fa fa-file"></i>
+            <input type="text" id="belgeNo" name="belgeNo">
+        </div>
+        <div class="form-group">
+            <label for="gumrukSahası">Gümrük Sahası</label>
+            <i class="fa fa-building"></i>
+            <select name="gumrukSahası" id="gumrukSahası">
+                <option value="">Seçiniz</option>
+                <option value=1>Gümrük Saha1</option>
+                <option value=2>Gümrük Saha2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tescilNo">Tescil Numarası</label>
+            <i class="fa fa-file"></i>
+            <input type="text" id="tescilNo" name="tescilNo">
+        </div>
+        <div class="form-group">
+            <label for="tescilTarihi">Tescil Tarihi</label>
+            <i class="fa fa-calendar"></i>
+            <input type="date" id="tescilTarihi" name="tescilTarihi" value="2025-07-11">
+        </div>
+        <div class="form-group">
+            <label for="islemYonu">İşlem Yönü</label>
+            <i class="fa fa-arrows-h"></i>
+            <select name="islemYonu" id="islemYonu">
+                <option value="">Seçiniz</option>
+                <option value=1>Giriş</option>
+                <option value=2>Çıkış</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="yukDurumu">Yük Durumu</label>
+            <i class="fa fa-hourglass"></i>
+            <select name="yukDurumu" id="yukDurumu">
+                <option value="">Seçiniz</option>
+                <option value=1>Yüklü</option>
+                <option value=2>Boş</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="belgeVergiNo">Belge Vergi Numarası</label>
+            <i class="fa fa-file"></i>
+            <input type="text" id="belgeVergiNo" name="belgeVergiNo">
+        </div>
+        <div class="form-group">
+            <label for="kullaniciKodu">Kullanıcı Kodu</label>
+            <i class="fa fa-address-book"></i>
+            <input type="text" id="kullaniciKodu" name="kullaniciKodu">
+        </div>
+        <div class="butonn">
+            <button type="submit">Sorgula</button>
+        </div>
+    </form>
+    <script src="sunucu.js"></script>
+    <script src="database.js"></script>
+</body> 
+</html>   

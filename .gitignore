@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+
+# MacOS
+.DS_Store
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Database files
+*.db

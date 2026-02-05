@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #250101;
+}
+body {
+    background: linear-gradient(360deg, rgb(58, 77, 95), rgb(228, 233, 237) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 30px;
+} 
+
+/* Sorgulama ve genel form stilleri */
+.form-group {
+    background-color: white;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 20px 10px 18px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 2px #1e7099;
+}
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}       
+
+select, input {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1e7099;
+    outline: none;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.form-group i {
+    margin-top: 5px;
+    margin-bottom: -25px;
+    align-self: flex-start;
+    z-index: 2;
+}
+
+button {
+    background-color: #1e7099; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color:  #5299b0;
+}
+.butonn {
+    grid-column: span 2;
+    text-align: center;
+} 
