@@ -10,6 +10,6 @@ node_modules/
 # VS Code
 .vscode/
 *.code-workspace
-
+.env
 # Database files
 *.db
